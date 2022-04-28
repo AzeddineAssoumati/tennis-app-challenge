@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+/* Custom fonts imports */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mulish:500,700&display=swap");
+
+/* Normalize CSS */
+@import "~normalize.css";
