@@ -1,0 +1,71 @@
+.player-mat-card {
+  display: flex;
+  height: 120px;
+  margin-bottom: 25px;
+  padding-bottom: 0 !important;
+  padding-top: 5px !important;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+
+  img {
+    width: 100%;
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.player-name {
+  color: var(--orange);
+  font-family: Montserrat-Bold;
+  padding-top: 5px;
+
+  .first-name {
+    margin-right: 5px;
+  }
+}
+
+.player-info-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  .title {
+    text-transform: uppercase;
+    color: var(--black-30);
+    margin-bottom: 2px;
+    font-family: Mulish-Bold;
+    margin-right: 10px;
+  }
+
+  .info {
+    color: var(--orange-light);
+    font-family: Montserrat-Bold;
+  }
+}
+
+// Media query section
+
+@media only screen and (min-width: 600px) {
+  .image-container {
+    width: 50%;
+
+    img {
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
+}
+
+// End of media query section

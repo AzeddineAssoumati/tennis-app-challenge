@@ -1,0 +1,27 @@
+<mat-card class="player-mat-card">
+  <div class="image-container">
+    <img [src]="player.picture">
+  </div>
+  <div class="card-content">
+    <mat-card-title-group>
+      <mat-card-title class="player-name">
+        <span class="first-name">{{ player.firstName }}</span> 
+        <span>{{ player.lastName }}</span>
+      </mat-card-title>
+    </mat-card-title-group>
+    <mat-card-content class="player-info-container">
+      <div class="rank-container">
+        <p class="title">Rank</p>
+        <p class="info"> #{{ player.rank }} </p>
+      </div>
+      <div class="points-container">
+        <p class="title">Points</p>
+        <p class="info"> {{ player.points }} </p>
+      </div>
+      <div class="country-container">
+        <p class="title">Country</p>
+        <p class="info"> {{ player.country.name }}</p>
+      </div>
+    </mat-card-content>
+  </div>
+</mat-card>

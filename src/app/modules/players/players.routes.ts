@@ -1,17 +1,9 @@
 import { RouterModule } from "@angular/router";
+import { PlayersListContainerComponent } from "src/app/modules/players/components/players-list/container/list-container.component";
 
 export const PlayersRoutes = RouterModule.forChild([
-  // {
-  //   path: "",
-  //   pathMatch: "full",
-  //   redirectTo: "list",
-  // },
-  // {
-  //   path: "list",
-  //   component: PlayersListComponent,
-  // },
-  // {
-  //   path: "players/:id",
-  //   component: PlayersDetailsComponent,
-  // },
+  {
+    path: "",
+    component: PlayersListContainerComponent,
+  }
 ]);
