@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="title">Statistiques</h2>
+  <div class="IMC">
+    <h3>
+      IMC moyen de tous les joueurs:
+      <span>{{ statistics.IMCMoyen | number: '1.2-2' }}</span>
+    </h3>
+  </div>
+  <div class="taille">
+    <h3>
+      La médiane de la taille des joueurs:
+      <span>{{ statistics.tailleMediane }} mètres</span>
+    </h3>
+  </div>
+  <div class="ratio">
+    <h3>Pays qui a le plus grand ratio de parties gagnées: </h3>
+    <div class="pie-chart">
+      <canvas baseChart [data]="pieChartData" [type]="pieChartType" [options]="pieChartOptions">
+      </canvas>
+    </div>
+  </div>
+</div>

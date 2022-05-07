@@ -1,21 +1,16 @@
-import { RouterModule } from "@angular/router";
-import { HomeComponent } from "./components/home.component";
-import { NotFoundComponent } from "./components/not-found.component";
+import { HomeComponent } from './components/home/home.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { RouterModule } from '@angular/router';
 
 export const appRoutes = RouterModule.forRoot([
-  { path: "", pathMatch: "full", redirectTo: "home" },
+  { path: "home", component: HomeComponent },
   {
-    path: "",
-    children: [
-      { path: "home", component: HomeComponent },
-      { path: "**", component: NotFoundComponent },
-      {
-        path: "players",
-        loadChildren: () =>
-          import("src/app/modules/players/players.module").then(
-            (m) => m.PlayersModule
-          ),
-      },
-    ],
+    path: "players",
+    loadChildren: () =>
+      import("src/app/modules/players/players.module").then(
+        (m) => m.PlayersModule
+      ),
   },
+  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "**", component: NotFoundComponent }
 ]);

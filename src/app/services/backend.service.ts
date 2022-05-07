@@ -6,7 +6,7 @@ import { environment } from "src/environments/environment";
 
 @Injectable()
 export class BackendService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   buildApiUrl(route: string) {
     return environment.apiUrl + route;
@@ -15,7 +15,6 @@ export class BackendService {
   get(route: string, queryParams = {}): Observable<any> {
     return this.http
       .get(this.buildApiUrl(route), {
-        withCredentials: true,
         responseType: "json",
         params: queryParams,
       })
@@ -25,7 +24,6 @@ export class BackendService {
   post(route: string, body: any, queryParams = {}): Observable<any> {
     return this.http
       .post(this.buildApiUrl(route), body, {
-        withCredentials: true,
         responseType: "json",
         params: queryParams,
       })
@@ -35,7 +33,6 @@ export class BackendService {
   put(route: string, body: any, queryParams = {}): Observable<any> {
     return this.http
       .put(this.buildApiUrl(route), body, {
-        withCredentials: true,
         responseType: "json",
         params: queryParams,
       })
@@ -45,7 +42,6 @@ export class BackendService {
   delete(route: string): Observable<any> {
     return this.http
       .delete(this.buildApiUrl(route), {
-        withCredentials: true,
         responseType: "json",
       })
       .pipe(catchError(this.errorHandler));
