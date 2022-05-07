@@ -1,0 +1,64 @@
+<div class="mat-dialog-actions">
+  <button matTooltip="Fermer le dialogue" mat-icon-button class="mat-dialog-close" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+  </button>
+</div>
+
+<div *ngIf="player" class="container">
+  <div class="right-side">
+    <div class="float-player-img">
+      <div class="player-img">
+        <img [src]="player.picture" alt="Player picture">
+      </div>
+      <div class="player-name">
+        <p class="player-first-name">{{ player.firstName }}</p>
+        <p class="player-last-name">{{ player.lastName }}</p>
+      </div>
+    </div>
+    <div class="player-info">
+      <div class="rank">
+        <p class="title">Rank</p>
+        <p class="info"> #{{ player.rank }} </p>
+      </div>
+      <div class="points">
+        <p class="title">Points</p>
+        <p class="info"> {{ player.points }} </p>
+      </div>
+      <div class="country">
+        <p class="title">Country</p>
+        <p class="info"> {{ player.country.name }} </p>
+      </div>
+      <div class="birthYear">
+        <p class="title">BirthYear</p>
+        <p class="info"> {{ player.birthYear }} </p>
+      </div>
+      <div class="age">
+        <p class="title">Age</p>
+        <p class="info"> {{ player.age }} </p>
+      </div>
+      <div class="weight">
+        <p class="title">Weight</p>
+        <p class="info"> {{ player.weight }} </p>
+      </div>
+      <div class="height">
+        <p class="title">Height</p>
+        <p class="info"> {{ player.height }} </p>
+      </div>
+    </div>
+  </div>
+  <div class="side-nav">
+    <div class="country-img">
+      <img [src]="player.country.picture" alt="Country picture">
+      <p class="country-code"> {{ player.country.code }} </p>
+    </div>
+    <div class="carrier-title">
+      <h3 class="title">career titles</h3>
+      <div *ngFor="let playerTitles of player.careerTitles">
+        <p class="info">{{playerTitles.year}} - {{playerTitles.titles.length}}</p>
+        <div *ngFor="let title of playerTitles.titles">
+          <p class="info"> <span>{{title}}</span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

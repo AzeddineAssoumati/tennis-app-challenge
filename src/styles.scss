@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Normalize CSS */
+@import "~normalize.css";
+
+/* custom styles import */
+@import "./styles/utils.scss";
+@import "./styles/custom_resets.scss";
+
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box !important;
+  font-family: Mulish-SemiBold, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+// custom variables
+:root {
+  --orange: #F2753B;
+  --orange-light: #EBAD65;
+  --black-30: rgba(0, 0, 0, 0.3);
+}
+
+// custom fonts
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(assets/fonts/montserrat/Montserrat-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Mulish-Bold;
+  src: url(assets/fonts/mulish/Mulish-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Mulish-SemiBold;
+  src: url(assets/fonts/mulish/Mulish-SemiBold.ttf) format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
