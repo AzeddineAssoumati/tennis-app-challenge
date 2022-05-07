@@ -1,0 +1,52 @@
+.container {
+  width: 60vw;
+  padding-top: 35vh;
+  padding-left: 20vw;
+}
+
+.content {
+  background-color: white;
+  box-shadow: -2px 9px 13px 1px rgb(191 177 177 / 49%);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10%;
+  padding-top: 5%;
+}
+
+.start-app-btn {
+  width: 50px;
+  background-color: darkorange;
+  outline: none;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  margin-left: 15px;
+  position: relative;
+  top: 2px;
+
+  mat-icon {
+    font-size: 30px;
+    color: black;
+    position: relative;
+    right: 2px;
+  }
+}
+
+.description {
+  font-size: x-large;
+  color: darkgray;
+  line-height: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.navigate-repo-link {
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
