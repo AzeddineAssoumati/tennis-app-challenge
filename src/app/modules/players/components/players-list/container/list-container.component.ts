@@ -33,7 +33,5 @@ export class PlayersListContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.players$ = this.playersService.fetchPlayers();
-
-    this.players$.subscribe(data => console.log(data))
   }
 }

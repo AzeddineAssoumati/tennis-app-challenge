@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 
 // Filters
 import { FilterPipe } from 'src/app/modules/shared/pipes/filter.pipe';
@@ -25,7 +26,8 @@ import { FilterPipe } from 'src/app/modules/shared/pipes/filter.pipe';
     MatIconModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   declarations: [
     FilterPipe
@@ -38,6 +40,7 @@ import { FilterPipe } from 'src/app/modules/shared/pipes/filter.pipe';
     MatCardModule,
     MatProgressSpinnerModule,
     MatInputModule,
+    MatDialogModule,
     FilterPipe
   ],
   providers: [BackendService],

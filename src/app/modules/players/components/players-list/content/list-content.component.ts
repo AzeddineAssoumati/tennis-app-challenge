@@ -1,5 +1,8 @@
 import { Component, Input, OnDestroy } from '@angular/core';
 import { IPlayers } from 'src/app/modules/players/models/players.model';
+import { MatDialog } from '@angular/material/dialog';
+import { PlayerDetailsDialogComponent } from 'src/app/modules/players/components/player-details/player-details-content.component';
+import { PlayersService } from 'src/app/modules/players/services/players.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -10,7 +13,7 @@ import { Subscription } from 'rxjs';
       </mat-form-field>
 
       <div *ngFor="let player of players | filter:'fullName':searchText" class="player">
-        <player-card class="player-card" [player]="player"></player-card>
+        <player-card class="player-card" (click)="openPlayerDetailsDialog(player.id)" [player]="player"></player-card>
       </div>
 
       <ng-container *ngIf="loading">
@@ -29,7 +32,19 @@ export class PlayersListContentComponent implements OnDestroy {
 
   private subs: Subscription = new Subscription();
 
-  constructor() { }
+  constructor(private dialog: MatDialog, private playersService: PlayersService) { }
+
+  openPlayerDetailsDialog(id: any) {
+    this.loading = true;
+    const getPlayerSub = this.playersService.getPlayer(id as string).subscribe(player => {
+      this.loading = false;
+      this.dialog.open(PlayerDetailsDialogComponent, {
+        data: player
+      });
+    });
+
+    this.subs.add(getPlayerSub);
+  }
 
   ngOnDestroy(): void {
     this.subs.unsubscribe();
