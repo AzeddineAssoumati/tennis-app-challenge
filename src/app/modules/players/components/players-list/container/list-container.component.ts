@@ -10,9 +10,7 @@ import { PlayersService } from 'src/app/modules/players/services/players.service
 
         <player-list-content [players]="dataSource.players" class="player-list-content"></player-list-content>
 
-        <div>
-          <!-- <players-statistics class="players-statistics" [statistics]="dataSource.statistics"></players-statistics> -->
-        </div>
+        <players-statistics class="players-statistics" [statistics]="dataSource.statistics"></players-statistics>
         
     </div>
 

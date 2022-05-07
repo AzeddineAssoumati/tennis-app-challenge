@@ -1,0 +1,25 @@
+.container {
+  background: white;
+  border-radius: 5px;
+  padding: 5%;
+  margin: 5%;
+  margin-top: 2%;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+.title {
+  color: var(--orange);
+  font-family: Montserrat-Bold;
+}
+
+.IMC,
+.taille {
+  span {
+    font-size: large;
+    font-weight: 900;
+  }
+}
+
+.pie-chart {
+  height: 35vh;
+}

@@ -9,16 +9,14 @@
 
 // Media query section
 
-@media only screen and (min-width: 600px) {
-  .players-statistics {
-    margin-top: 10%;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   .players-list-container {
     display: flex;
     justify-content: space-around;
+  }
+
+  .players-statistics {
+    margin-top: 10%;
   }
 
   .player-list-content {

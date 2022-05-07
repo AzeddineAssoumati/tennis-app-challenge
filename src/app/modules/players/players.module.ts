@@ -6,6 +6,7 @@ import { PlayerCardComponent } from 'src/app/modules/players/components/player-c
 import { PlayersListContainerComponent } from 'src/app/modules/players/components/players-list/container/list-container.component';
 import { PlayersListContentComponent } from 'src/app/modules/players/components/players-list/content/list-content.component';
 import { PlayerDetailsDialogComponent } from 'src/app/modules/players/components/player-details/player-details-content.component';
+import { StatisticsComponent } from 'src/app/modules/players/components/statistics/statistics.component';
 
 @NgModule({
   imports: [SharedModule, PlayersRoutes],
@@ -13,7 +14,8 @@ import { PlayerDetailsDialogComponent } from 'src/app/modules/players/components
     PlayerCardComponent,
     PlayersListContainerComponent,
     PlayersListContentComponent,
-    PlayerDetailsDialogComponent
+    PlayerDetailsDialogComponent,
+    StatisticsComponent
   ],
   providers: [
     PlayersService

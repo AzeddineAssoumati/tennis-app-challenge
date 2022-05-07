@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { NgChartsModule } from 'ng2-charts';
 
 // services imports
 import { BackendService } from "src/app/services/backend.service";
@@ -27,7 +28,8 @@ import { FilterPipe } from 'src/app/modules/shared/pipes/filter.pipe';
     MatCardModule,
     MatProgressSpinnerModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    NgChartsModule
   ],
   declarations: [
     FilterPipe
@@ -41,6 +43,7 @@ import { FilterPipe } from 'src/app/modules/shared/pipes/filter.pipe';
     MatProgressSpinnerModule,
     MatInputModule,
     MatDialogModule,
+    NgChartsModule,
     FilterPipe
   ],
   providers: [BackendService],
