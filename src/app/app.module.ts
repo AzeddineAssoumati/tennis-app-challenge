@@ -6,11 +6,10 @@ import { HomeComponent } from "src/app/components/home/home.component";
 import { NotFoundComponent } from "src/app/components/not-found/not-found.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from "src/app/modules/shared/shared.module";
-import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
-  imports: [BrowserModule, SharedModule, appRoutes, BrowserAnimationsModule, NgChartsModule],
+  imports: [BrowserModule, SharedModule, appRoutes, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
