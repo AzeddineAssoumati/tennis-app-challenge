@@ -1,17 +1,8 @@
 {
-  "routes": [
-      {
-          "route": "/*",
-          "rewrite": "/index.html"
-      }
-  ],
   "navigationFallback": {
-      "rewrite": "/index.html",
-      "exclude": ["/static/js/*", "/static/css/*", "*.json"]
+      "rewrite": "index.html"
   },
   "mimeTypes": {
-      ".json": "text/json",
-      ".js": "text/javascript",
-      ".css": "text/css"
+      ".json": "text/json"
   }
 }
