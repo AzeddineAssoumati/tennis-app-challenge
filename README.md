@@ -26,6 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Deployement
 
 The website is hosted using Azure cloud (static web site service) using CI/CD with github actions.
+To see the app in action please visite [Tennis-App-Challenge](https://red-pebble-03eef3d03.1.azurestaticapps.net)
 
 ## Further help
 
