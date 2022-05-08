@@ -27,6 +27,11 @@
   max-height: 100vh !important;
 }
 
+.mat-dialog-container {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
 @media only screen and (min-width: 600px) {
   .cdk-overlay-pane {
     max-width: 90vw !important;

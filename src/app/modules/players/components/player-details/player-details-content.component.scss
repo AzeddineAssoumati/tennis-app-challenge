@@ -10,7 +10,7 @@
   font-family: Montserrat-Bold;
 
   .player-first-name {
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
   }
 
   .player-last-name {
@@ -41,8 +41,8 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "rank points country"
-  "birthyear age ."
-  "weight height .";
+    "birthyear age ."
+    "weight height .";
 
   .rank {
     grid-area: rank;
@@ -111,6 +111,25 @@
   margin-top: 5vh;
 }
 
+.mat-dialog-actions {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.mat-dialog-close {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 40px;
+}
+
 // Media query section
 
 @media only screen and (min-width: 600px) {
@@ -129,10 +148,6 @@
       width: 60%;
       margin-left: 20%;
     }
-  }
-
-  .mat-dialog-actions {
-    padding-bottom: 40px;
   }
 }
 
@@ -189,7 +204,7 @@
   }
 
   .mat-dialog-actions {
-    padding-bottom: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -239,26 +254,6 @@
     column-gap: 2vw;
   }
 
-}
-
-.mat-dialog-actions {
-  display: block;
-  text-align: center;
-}
-
-.mat-dialog-close {
-  outline: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.close-icon {
-  transition: 1s ease-in-out;
-}
-
-.close-icon:hover {
-  transform: rotate(180deg);
 }
 
 // End of media query section
