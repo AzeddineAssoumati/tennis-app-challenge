@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="content">
+    <div>
+      <span class="description">To start the app please click the home:</span>
+      <button routerLink="/players" mat-icon-button class="start-app-btn cursor-pointer"
+        aria-label="Start application button">
+        <mat-icon>home</mat-icon>
+      </button>
+    </div>
+    <br>
+    <div>
+      <p class="description">If you are a developer and you want to reach the code please click one of the links:</p>
+      <div class="links">
+        <a [href]="front_repo" target="_blank" mat-icon-button class="navigate-repo-link cursor-pointer"
+          aria-label="Start application button">
+          FrontEnd repository
+        </a>
+        <a [href]="back_repo" target="_blank" mat-icon-button class="navigate-repo-link cursor-pointer"
+          aria-label="Start application button">
+          BackEnd repository
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
