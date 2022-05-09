@@ -1,7 +1,7 @@
 import { Component, Input, OnDestroy } from '@angular/core';
 import { IPlayers } from 'src/app/modules/players/models/players.model';
 import { MatDialog } from '@angular/material/dialog';
-import { PlayerDetailsDialogComponent } from 'src/app/modules/players/components/player-details/player-details-content.component';
+import { PlayerDetailsDialogComponent } from 'src/app/modules/players/components/player-details/player-details-dialog.component';
 import { PlayersService } from 'src/app/modules/players/services/players.service';
 import { Subscription } from 'rxjs';
 
